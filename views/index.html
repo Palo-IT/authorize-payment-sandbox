@@ -1,0 +1,17 @@
+<head>
+	<script type="text/javascript" src="https://checkoutshopper-test.adyen.com/checkoutshopper/assets/js/sdk/checkoutSDK.1.2.1.min.js"></script>
+	<script src="../ejs.min.js"></script>
+</head>
+
+<body>
+	<div id="your-payment-div"></div>
+</body>
+
+<script type="text/javascript">
+	var sdkConfigObj = {
+   		context : 'test'
+	};
+	 
+	// Initiate the Checkout form.
+	var checkout = chckt.checkout( setupResponse, '#your-payment-div', sdkConfigObj);
+</script>
